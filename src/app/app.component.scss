@@ -1,0 +1,54 @@
+$mainColor: #064420;
+.todo {
+  h3 {
+    padding: 10px 0;
+    color: #fff;
+    background: $mainColor;
+  }
+  .container {
+    .header {
+      @extend %share;
+      input {
+        width: 43%;
+        margin-right: 33px;
+        border-radius: 10px;
+        outline: none;
+        border: none;
+        background: #38694d;
+        color: #fff;
+        font-size: 20px;
+      }
+      button {
+        @extend %shareBtn;
+      }
+    }
+  }
+  .body {
+    display: flex;
+    justify-content: space-between;
+    @extend %share;
+    span {
+      color: #fff;
+      font-size: 19px;
+      margin-left: 30px;
+    }
+    button {
+      margin-right: 30px;
+      @extend %shareBtn;
+    }
+  }
+}
+
+%share {
+  background: $mainColor;
+  padding: 17px 0;
+  border-radius: 10px;
+}
+%shareBtn {
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  background: #f00;
+  padding: 5px 18px;
+}
